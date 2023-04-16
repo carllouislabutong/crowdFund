@@ -8,8 +8,8 @@ function App() {
 
   const handleMenu = () => {
     setMenu(!menu);
-    // const navChange = document.querySelector(".nav-area");
-    // navChange.classList.toggle("open-nav");
+    const navChange = document.querySelector(".nav-area");
+    navChange.classList.toggle("open-nav");
   };
 
   const modalProject = () => {
