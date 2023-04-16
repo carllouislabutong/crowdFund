@@ -10,6 +10,7 @@ function App() {
     setMenu(!menu);
     const navChange = document.querySelector(".nav-area");
     navChange.classList.toggle("open-nav");
+    console.log(navChange);
   };
 
   const modalProject = () => {

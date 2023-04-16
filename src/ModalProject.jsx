@@ -63,16 +63,14 @@ function ModalProject({ modal }) {
               id="first-checkbox"
               style={{ display: "none" }}
             />
-            <div>
-              <h1>Pledge with no Reward</h1>
-              <p>
-                Choose to support us without a reward if you simply believe in
-                our project. As a <br />
-                backer, you will be signed up to receive product updates via
-                email.
-              </p>
-            </div>
+
+            <h1>Pledge with no Reward</h1>
           </div>
+          <p>
+            Choose to support us without a reward if you simply believe in our
+            project. As a <br />
+            backer, you will be signed up to receive product updates via email.
+          </p>
         </section>
 
         <section
@@ -91,7 +89,10 @@ function ModalProject({ modal }) {
                     <h1
                       style={
                         secondChangeBorder
-                          ? { backgroundColor: " hsl(176, 50%, 47%)" }
+                          ? {
+                              backgroundColor: " hsl(176, 50%, 47%)",
+                              left: "2px",
+                            }
                           : { backgroundColor: "white" }
                       }
                     ></h1>

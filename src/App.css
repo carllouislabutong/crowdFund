@@ -101,6 +101,7 @@ header {
     min-height: 500px;
     padding: 3rem 0;
     position: relative;
+    transition: .6s ease-in-out;
 }
 
 .nav-area li a:hover:before {
@@ -190,18 +191,23 @@ header {
 
     .open-nav {
         display: block !important;
-
+        position: absolute;
+        left: .6rem !important;
+        opacity: .7 !important;
     }
 
     .nav-area {
-        display: none;
+        display: block;
         position: absolute;
         background-color: black;
         top: 100px;
+        left: -600px;
         width: 95%;
         max-width: 600px;
         padding: 10px;
-        opacity: .7;
+        opacity: 0;
+        transition: .7s ease-out;
+
 
     }
 
@@ -487,8 +493,9 @@ header {
 
 .modal-content {
     position: fixed;
-    top: 10rem;
+    top: 7rem;
     width: 95%;
+    bottom: 7rem;
     max-width: 700px;
     margin: 0 auto;
     /* transform: translate(50%, 50%); */
@@ -535,6 +542,7 @@ header {
     opacity: .6;
     line-height: 1.6rem;
     margin-top: 15px;
+    margin-left: 2.3rem;
 }
 
 .first-flex-modal {
@@ -576,7 +584,6 @@ header {
 
 .hero-section-modal {
     display: flex;
-    align-items: baseline;
     gap: 1.8rem;
 }
 
@@ -686,18 +693,18 @@ input[type="text"] {
 
 label {
     border: 2px solid rgb(194, 186, 186);
-    height: 22px;
-    width: 22px;
+    height: 20px;
+    width: 20px;
     border-radius: 10px;
     position: relative;
 }
 
 label h1 {
     background-color: var(--Moderate-cyan);
-    height: 13px;
-    width: 13px;
+    height: 10px;
+    width: 10px;
     top: 4px;
-    left: 3.6px;
+    left: 3.2px;
     border-radius: 10px;
     position: absolute;
 }
